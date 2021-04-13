@@ -864,7 +864,7 @@ module.exports = (function(e, t) {
         const a = [
           trimRightStr(i, 10).padEnd(10),
           o.padEnd(14),
-          generateBarChart(s, 21),
+          generateBarChart(s, 19),
           String(s.toFixed(1)).padStart(5) + "%"
         ];
         r.push(a.join(" "));
@@ -1529,7 +1529,9 @@ module.exports = (function(e, t) {
   },
   215: function(e) {
     e.exports = {
-      _args: [["@octokit/rest@16.36.0", "/Users/matan/dev/waka-box"]],
+      _args: [
+        ["@octokit/rest@16.36.0", "/Users/enter3017sky/Documents/2021/waka-box"]
+      ],
       _from: "@octokit/rest@16.36.0",
       _id: "@octokit/rest@16.36.0",
       _inBundle: false,
@@ -1551,7 +1553,7 @@ module.exports = (function(e, t) {
       _requiredBy: ["/"],
       _resolved: "https://registry.npmjs.org/@octokit/rest/-/rest-16.36.0.tgz",
       _spec: "16.36.0",
-      _where: "/Users/matan/dev/waka-box",
+      _where: "/Users/enter3017sky/Documents/2021/waka-box",
       author: { name: "Gregor Martynus", url: "https://github.com/gr2m" },
       bugs: { url: "https://github.com/octokit/rest.js/issues" },
       bundlesize: [{ path: "./dist/octokit-rest.min.js.gz", maxSize: "33 kB" }],
@@ -3388,10 +3390,10 @@ module.exports = (function(e, t) {
     const o = i((e, t) => e.warn(t));
     const a = i((e, t) => e.warn(t));
     const u = /^\/search\//;
-    const p = /^\/repos\/[^/]+\/[^/]+\/commits\/[^/]+\/(check-runs|check-suites)/;
+    const p = /^\/repos\/[^\/]+\/[^\/]+\/commits\/[^\/]+\/(check-runs|check-suites)/;
     const c = /^\/installation\/repositories/;
     const d = /^\/user\/installations/;
-    const l = /^\/orgs\/[^/]+\/installations/;
+    const l = /^\/orgs\/[^\/]+\/installations/;
     function normalizePaginatedListResponse(e, t, r) {
       const i = t.replace(e.request.endpoint.DEFAULTS.baseUrl, "");
       if (!u.test(i) && !p.test(i) && !c.test(i) && !d.test(i) && !l.test(i)) {
@@ -3678,7 +3680,7 @@ module.exports = (function(e, t) {
   },
   361: function(e) {
     e.exports = {
-      _args: [["axios@0.19.0", "/Users/matan/dev/waka-box"]],
+      _args: [["axios@0.19.0", "/Users/enter3017sky/Documents/2021/waka-box"]],
       _from: "axios@0.19.0",
       _id: "axios@0.19.0",
       _inBundle: false,
@@ -3699,7 +3701,7 @@ module.exports = (function(e, t) {
       _requiredBy: ["/"],
       _resolved: "https://registry.npmjs.org/axios/-/axios-0.19.0.tgz",
       _spec: "0.19.0",
-      _where: "/Users/matan/dev/waka-box",
+      _where: "/Users/enter3017sky/Documents/2021/waka-box",
       author: { name: "Matt Zabriskie" },
       browser: { "./lib/adapters/http.js": "./lib/adapters/xhr.js" },
       bugs: { url: "https://github.com/axios/axios/issues" },
@@ -6145,7 +6147,7 @@ module.exports = (function(e, t) {
     const u = r(280);
     const p = process.platform === "win32";
     const c = /\.(?:com|exe)$/i;
-    const d = /node_modules[\\/].bin[\\/][^\\/]+\.cmd$/i;
+    const d = /node_modules[\\\/].bin[\\\/][^\\\/]+\.cmd$/i;
     const l =
       i(() =>
         u.satisfies(process.version, "^4.8.0 || ^5.7.0 || >= 6.0.0", true)
